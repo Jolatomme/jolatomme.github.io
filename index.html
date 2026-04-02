@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profil GitHub de Jolatomme : projets en microélectronique et orienteering">
+    <title>jolatomme - GitHub</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            color: #24292e;
+            background-color: #ffffff;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            border-bottom: 1px solid #d1d9e0;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .header-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 0;
+        }
+        .header-description {
+            font-size: 18px;
+            color: #656d76;
+            margin-top: 8px;
+        }
+        .github-stats {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            padding: 16px;
+            border: 1px solid #d1d9e0;
+            border-radius: 6px;
+            background-color: #f6f8fa;
+        }
+        .stat {
+            display: flex;
+            flex-direction: column;
+        }
+        .stat-number {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .stat-label {
+            font-size: 14px;
+            color: #656d76;
+        }
+        .repository-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .repository-card {
+            border: 1px solid #d1d9e0;
+            border-radius: 6px;
+            padding: 16px;
+            background-color: #f6f8fa;
+            transition: box-shadow 0.2s ease-in-out;
+        }
+        .repository-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .repository-name {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 8px 0;
+        }
+        .repository-description {
+            font-size: 14px;
+            color: #656d76;
+            margin: 0 0 12px 0;
+        }
+        .repository-language {
+            font-size: 12px;
+            color: #656d76;
+        }
+        .repository-link {
+            font-size: 14px;
+            display: inline-block;
+            margin-top: 8px;
+        }
+        h2 {
+            border-bottom: 1px solid #d1d9e0;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+        .about-section {
+            margin-top: 30px;
+        }
+        .about-section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .contact-section {
+            margin-top: 30px;
+        }
+        .contact-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .contact-section li {
+            margin-bottom: 8px;
+        }
+        .contact-section a {
+            color: #0969da;
+            text-decoration: none;
+        }
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="header-title">jolatomme</h1>
+            <p class="header-description">PhD, Microélectronique et projets en orienteering</p>
+        </header>
+
+        <section class="github-stats">
+            <div class="stat">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Public repositories</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">X</span>
+                <span class="stat-label">Stars</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">X</span>
+                <span class="stat-label">Followers</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">X</span>
+                <span class="stat-label">Following</span>
+            </div>
+        </section>
+
+        <h2>Projets en Orienteering</h2>
+        <div class="repository-list">
+            <div class="repository-card">
+                <h3 class="repository-name">MeOSDjango</h3>
+                <p class="repository-description">Développement Django pour afficher les résultats d'orientation avec MeOS.</p>
+                <span class="repository-language">Python, Django</span>
+                <a href="https://github.com/Jolatomme/MeOSDjango" target="_blank" rel="noopener noreferrer" class="repository-link">Voir le dépôt →</a>
+            </div>
+            <div class="repository-card">
+                <h3 class="repository-name">CO_Startclock</h3>
+                <p class="repository-description">Horloge de départ auto-calibrée et synchronisée DCF77 pour les courses d'orientation, basée sur Micropython et STM32L152RE.</p>
+                <span class="repository-language">MicroPython, STM32</span>
+                <a href="https://github.com/Jolatomme/CO_Startclock" target="_blank" rel="noopener noreferrer" class="repository-link">Voir le dépôt →</a>
+            </div>
+            <div class="repository-card">
+                <h3 class="repository-name">pyMeOS</h3>
+                <p class="repository-description">Réimplémentation de MeOS en Python pour supporter toutes les plateformes.</p>
+                <span class="repository-language">Python</span>
+                <a href="https://github.com/Jolatomme/pyMeOS" target="_blank" rel="noopener noreferrer" class="repository-link">Voir le dépôt →</a>
+            </div>
+        </div>
+
+        <section class="about-section">
+            <h2>À propos</h2>
+            <p>Doctorant en microélectronique, spécialisé dans la conception de circuits intégrés analogiques (SMPS, LDO, Bandgap, DAC, capteurs d'image et TOF). Passionné par l'orientation et le développement de solutions techniques pour ce sport.</p>
+        </section>
+
+        <section class="contact-section">
+            <h2>Contact</h2>
+            <p>Tu peux me contacter via :</p>
+            <ul>
+                <li><a href="https://github.com/Jolatomme" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="mailto:jol.atomme@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
